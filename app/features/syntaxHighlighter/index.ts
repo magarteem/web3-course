@@ -1,0 +1,1 @@
+export { SH } from "./SyntaxHighlighter";
