@@ -1,0 +1,176 @@
+/*! mainSection*/
+.mainSection {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ width: 100%;
+ margin-top: 20px;
+}
+/*? cardItem */
+.cardItem {
+ height: auto;
+}
+/*?_header*/
+._header {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ font-family: "Forum", cursive;
+ color: #ffffffb8;
+ font-size: 40px;
+ font-weight: 500;
+ letter-spacing: 10px;
+ width: 100%;
+ height: 100px;
+ background-color: #000000b8;
+}
+
+/*? cardItemMain*/
+.cardItemMain {
+ display: flex;
+ position: relative;
+ width: 300px;
+ height: 300px;
+ border-radius: 20px;
+ overflow: hidden;
+ box-shadow: 0 10px 20px rgb(0, 0, 0, 0.288);
+ transition: all 0.2s;
+ margin: 10px 10px;
+}
+
+/*? showInfoAfter*/
+.showInfoAfter {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ transition: all 0.3s;
+ border-radius: 20px;
+}
+.showInfoAfter {
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ z-index: 2;
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+}
+
+/*? showInfoBefore*/
+.showInfoBefore {
+ display: flex;
+ align-items: flex-start;
+ justify-content: flex-start;
+ flex-direction: column;
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ transition: all 0.3s;
+ border-radius: 20px;
+ background-color: #0f2027;
+ z-index: 3;
+}
+/*? link*/
+.link {
+ display: flex;
+ align-items: center;
+ margin: 10px 0 40px 10px;
+}
+.link a {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 2px;
+ cursor: pointer;
+ height: 65px;
+ width: 65px;
+ margin: 3px 5px;
+ border-radius: 10px;
+}
+.link a img {
+ padding: 5px;
+}
+.link a:hover {
+ box-shadow: 0px 9px 36px rgb(226 215 215 / 43);
+}
+
+/*? skils*/
+.skils {
+ padding-left: 10px;
+}
+.skils h3 {
+ font-size: 25px;
+ padding-bottom: 5px;
+}
+.skilsImg img {
+ margin: 5px 5px;
+}
+
+/* ?     */
+.__close,
+.__open {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: absolute;
+ width: 40px;
+ height: 40px;
+ cursor: pointer;
+ background-color: #fff;
+}
+
+.__open,
+.__close {
+ position: inherit;
+ right: 0;
+ bottom: 0;
+ border-top-left-radius: 20px;
+ transition: all 0.2s;
+}
+.__open:hover,
+.__close:hover {
+ background-color: #5daab1;
+}
+.__close img,
+.__open img {
+ width: 20px;
+ height: 20px;
+}
+.__close img {
+ transform: rotate(45deg);
+}
+
+.transformTranslate {
+ transform: translate(-85%, -85%) rotate(90deg);
+ /*background-color: #0f2027;*/
+ z-index: 7;
+}
+.translateArrow {
+ transform: translate(85%, 85%);
+}
+/*=============*/
+
+/*? cardItemHover*/
+/*.cardItemHover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgba(1, 1, 1, 0.85);
+  transition: all 0.6s;
+  z-index: 5;
+  cursor: pointer;
+}
+.cardItemHover_activ {
+  opacity: 1;
+  transition: all 0.6s;
+}*/
