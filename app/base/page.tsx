@@ -8,10 +8,11 @@ import {
 import { NavTree } from "../shared/components/treeData/NavTree";
 import { CodeBlockLayouts } from "@layouts/index";
 import { GoBackBtn } from "@features/index";
+import { BaseTreeDataMenu } from "../shared/const/sourse/baseSolidity/BaseTreeDataMenu";
 
 const Tree = ({ id }: { id: number }) => {
   return (
-    <div className="prose max-w-3xl mx-auto">
+    <div className="prose w-full">
       <div className="mt-[100px]" />
 
       <Title
@@ -35,15 +36,15 @@ const Tree = ({ id }: { id: number }) => {
 
 export default function CodeExample() {
   return (
-    <div className="grid grid-flow-col">
-      <NavTree />
-      <main className="flex min-h-screen flex-col items-center justify-between p-4">
+    <main className="grid grid-cols-[1fr] pb-4 gap-6">
+      <NavTree nav={BaseTreeDataMenu}/>
+      <section className="ml-[350px] flex flex-col items-center justify-between p-4">
         <GoBackBtn />
 
-        {new Array(11).fill("").map((x, idx) => {
+        {new Array(2).fill("").map((x, idx) => {
           return <Tree key={idx} id={idx} />;
         })}
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }

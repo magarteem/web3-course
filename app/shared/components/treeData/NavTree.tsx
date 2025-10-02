@@ -4,13 +4,17 @@ import "./styles.css";
 import TreeView, { flattenTree } from "react-accessible-treeview";
 import { DiCss3, DiJavascript, DiNpm } from "react-icons/di";
 import { FaList, FaRegFolder, FaRegFolderOpen } from "react-icons/fa";
-import { BaseTreeDataMenu } from "../../const/sourse/baseSolidity/BaseTreeDataMenu";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { FlatTreeData } from "./typeTreeMenu";
 
-const data = flattenTree(BaseTreeDataMenu);
+interface Props{
+   nav:FlatTreeData
+}
 
-export const NavTree = () => {
+
+export const NavTree = ({nav}:Props) => {
+  const data = flattenTree(nav);
   const { push } = useRouter();
   const [activeId, setActiveId] = useState<string>("");
 

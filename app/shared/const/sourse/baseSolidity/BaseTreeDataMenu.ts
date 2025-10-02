@@ -1,4 +1,4 @@
-import { FlatTreeData } from "./types/baseTreeDataMenuTypes";
+import { FlatTreeData } from "@/app/shared/components/treeData/typeTreeMenu";
 
 export const BaseTreeDataMenu: FlatTreeData = {
   name: "",

@@ -1,3 +1,12 @@
+"use client"
+import { MDXProvider } from "@mdx-js/react";
+
 export default function MDXLayout({ children }: { children: React.ReactNode }) {
-  return <main className="prose prose-lg max-w-3xl p-8">{children}</main>;
+  return <div className="prose prose-lg prose-invert">
+     <MDXProvider>
+
+    {children}
+     </MDXProvider>
+    
+    </div>;
 }

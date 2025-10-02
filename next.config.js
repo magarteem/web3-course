@@ -2,7 +2,7 @@
 //const nextConfig = {};
 //module.exports = nextConfig;
 
-const withMDX = require("@next/mdx")();
+const withMDX = nextMDX();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
