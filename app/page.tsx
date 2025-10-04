@@ -1,5 +1,5 @@
-import { CardCourses } from "./entities/cardCourses/CardCourses";
-import { courseCards } from "./shared/const/sourse/courseCards";
+import { CardCourses } from "@entities/cardCourses/CardCourses";
+import { courseCards } from "@const/courseCards";
 
 export default function CodeExample() {
   return (

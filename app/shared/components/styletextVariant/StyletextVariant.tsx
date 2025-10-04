@@ -1,17 +1,17 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
 interface Props {
-  v?: 'p' | 'b' | 'code';
+  v?: "p" | "b" | "code";
   children: ReactNode;
 }
 
-export const StyletextVariant = ({ children, v = 'p' }: Props) => {
+export const StyleTextVariant = ({ children, v = "p" }: Props) => {
   switch (v) {
-    case 'p':
+    case "p":
       return <p>{children}</p>;
-    case 'b':
+    case "b":
       return <b>{children}</b>;
-    case 'code':
+    case "code":
       return <code>{children}</code>;
 
     default:

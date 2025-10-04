@@ -1,4 +1,4 @@
-import { CourseCardsType } from "../../types/courseCardsType";
+import { CourseCardsType } from "../types/courseCardsType";
 
 export const courseCards: CourseCardsType[] = [
   {
@@ -20,5 +20,5 @@ export const courseCards: CourseCardsType[] = [
     title: "Foundry",
     subTitle: "Базовый курс по Foundry",
     link: "/foundry",
-  }
+  },
 ];

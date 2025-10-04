@@ -1,0 +1,1 @@
+export { StyleTextVariant } from "./StyleTextVariant";

@@ -1,14 +1,12 @@
-import { StyletextVariant as SV } from "../shared/components/styletextVariant/StyletextVariant";
-import { Title } from "../shared/components/title/Title";
+import { NavTree, StyleTextVariant as SV, Title } from "@components/index";
 import {
   codeExample1V1,
   codeExample1V2,
   codeExample1V3,
-} from "@const/sourse/baseSolidity/lesson-1";
-import { NavTree } from "../shared/components/treeData/NavTree";
+} from "@/app/shared/const/сourse/baseSolidity/lesson-1";
 import { CodeBlockLayouts } from "@layouts/index";
 import { GoBackBtn } from "@features/index";
-import { BaseTreeDataMenu } from "../shared/const/sourse/baseSolidity/BaseTreeDataMenu";
+import { BaseTreeDataMenu } from "@const/сourse";
 
 const Tree = ({ id }: { id: number }) => {
   return (
@@ -37,7 +35,7 @@ const Tree = ({ id }: { id: number }) => {
 export default function CodeExample() {
   return (
     <main className="grid grid-cols-[1fr] pb-4 gap-6">
-      <NavTree nav={BaseTreeDataMenu}/>
+      <NavTree nav={BaseTreeDataMenu} />
       <section className="ml-[350px] flex flex-col items-center justify-between p-4">
         <GoBackBtn />
 

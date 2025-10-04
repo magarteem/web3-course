@@ -20,9 +20,16 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@layouts/*": ["./app/shared/layouts/*"],
+      //FSD architecture
+      "@core/*": ["./app/core/*"],
+      "@widgets/*": ["./app/widgets/*"],
       "@features/*": ["./app/features/*"],
-      "@const/*": ["./app/shared/const/*"]
+      "@entities/*": ["./app/entities/*"],
+      "@shared/*": ["./app/shared/*"],
+      //Path Import Elements
+      "@layouts/*": ["./app/shared/layouts/*"],
+      "@const/*": ["./app/shared/const/*"],
+      "@components/*": ["./app/shared/components/*"]
     }
   },
   "include": [
