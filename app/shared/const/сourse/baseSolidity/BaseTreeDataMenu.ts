@@ -18,7 +18,7 @@ export const BaseTreeDataMenu: FlatTreeData = {
 
       children: [
         {
-          name: "react-accessible-treeview",
+          name: "react-accessible",
           children: [{ name: "index.js", metadata: { url: "#my-section-6" } }],
         },
         {
@@ -31,7 +31,7 @@ export const BaseTreeDataMenu: FlatTreeData = {
       name: "Тестирование",
       children: [
         {
-          name: "react-accessible-treeview",
+          name: "react-accessible",
           children: [{ name: "index.js", metadata: { url: "#my-section-8" } }],
         },
         {
@@ -44,7 +44,7 @@ export const BaseTreeDataMenu: FlatTreeData = {
       name: "Foundry",
       children: [
         {
-          name: "react-accessible-treeview",
+          name: "react-accessible",
           children: [{ name: "index.js", metadata: { url: "#my-section-10" } }],
         },
         {

@@ -16,7 +16,8 @@ interface Props{
 export const NavTree = ({nav}:Props) => {
   const data = flattenTree(nav);
   const { push } = useRouter();
-  const [activeId, setActiveId] = useState<string>("");
+  const [activeId, setActiveId] = useState("");
+  const [isOPen, setIsOPen] = useState(false);
 
   const expandedIds = data
     .filter((node) => node.children && node.children.length > 0)
@@ -56,8 +57,10 @@ export const NavTree = ({nav}:Props) => {
 
   return (
     <div className="fixed">
+
       <div className="directory">
         <TreeView
+        
           onNodeSelect={(f) => {
             !f.isBranch &&
               typeof f.element.metadata?.url === "string" &&
@@ -95,6 +98,8 @@ export const NavTree = ({nav}:Props) => {
           )}
         />
       </div>
+
+      <button onClick={()=>setIsOPen(prev=>!prev)} className="btn">{isOPen ? "Скрыть" : "Открыть"}</button>
     </div>
   );
 };
