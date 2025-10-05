@@ -1,5 +1,6 @@
 "use client";
 
+import s from "./codeBlockLayouts.module.scss";
 import { ClipboardBtn, SH } from "@features/index";
 
 interface Props {
@@ -10,7 +11,7 @@ export const CodeBlockLayouts = ({ code }: Props) => {
   return (
     <div
       translate="no"
-      className="notranslate relative rounded-xl overflow-hidden shadow-lg my-6"
+      className={s.codeBlockLayouts}
     >
       <ClipboardBtn code={code} />
 

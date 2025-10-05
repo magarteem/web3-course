@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import s from "./subTitle.module.scss";
 
 interface Props {
   codeExample: string;
@@ -16,7 +17,7 @@ export const SubTitle = ({ codeExample }: Props) => {
   return (
     <button
       onClick={copyToClipboard}
-      className="absolute right-2 top-2 bg-gray-800 hover:bg-gray-700 text-white text-xs px-2 py-1 rounded"
+      className={s.subTitle3}
     >
       {copied ? '✅ Скопировано' : '📋 Копировать'}
     </button>

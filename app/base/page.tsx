@@ -7,6 +7,7 @@ import {
 import { CodeBlockLayouts } from "@layouts/index";
 import { GoBackBtn } from "@features/index";
 import { BaseTreeDataMenu } from "@const/сourse";
+import s from "./pageBase.module.scss";
 
 const Tree = ({ id }: { id: number }) => {
   return (
@@ -34,9 +35,9 @@ const Tree = ({ id }: { id: number }) => {
 
 export default function CodeExample() {
   return (
-    <main className="grid grid-cols-[1fr] pb-4 gap-6">
+    <main className={s.pageBase}>
       <NavTree nav={BaseTreeDataMenu} />
-      <section className="ml-[350px] flex flex-col items-center justify-between p-4">
+      <section className={s.section}>
         <GoBackBtn />
 
         {new Array(2).fill("").map((x, idx) => {
