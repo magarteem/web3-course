@@ -4,7 +4,7 @@ import {
   codeExample1V2,
   codeExample1V3,
 } from "@/app/shared/const/сourse/baseSolidity/lesson-1";
-import { CodeBlockLayouts } from "@layouts/index";
+import { CodeBlockLayoutsDeff } from "@layouts/index";
 import { GoBackBtn } from "@features/index";
 import { BaseTreeDataMenu } from "@const/сourse";
 import s from "./pageBase.module.scss";
@@ -24,11 +24,11 @@ const Tree = ({ id }: { id: number }) => {
         <SV v="code">ethers.js</SV>.
       </SV>
 
-      <CodeBlockLayouts code={codeExample1V1} />
-      <CodeBlockLayouts code={codeExample1V2} />
-      <CodeBlockLayouts code={codeExample1V3} />
-      <CodeBlockLayouts code={codeExample1V2} />
-      <CodeBlockLayouts code={codeExample1V3} />
+      <CodeBlockLayoutsDeff code={codeExample1V1} />
+      <CodeBlockLayoutsDeff code={codeExample1V2} />
+      <CodeBlockLayoutsDeff code={codeExample1V3} />
+      <CodeBlockLayoutsDeff code={codeExample1V2} />
+      <CodeBlockLayoutsDeff code={codeExample1V3} />
     </div>
   );
 };

@@ -1,14 +1,15 @@
 import { ClipboardBtn, SH } from "@features/index";
+import s from "./codeBlockLayouts.module.scss";
 
 interface Props {
   code: string;
 }
 
-export function CodeBlockLayoutsDeff({ code }: Props) {
+export const CodeBlockLayoutsDeff = ({ code }: Props) =>{
   return (
     <div
       translate="no"
-      className="notranslate relative rounded-xl overflow-hidden shadow-lg my-6"
+      className={s.codeBlockLayouts}
     >
       <ClipboardBtn code={code} />
 
